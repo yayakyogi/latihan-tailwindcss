@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/tailwind.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Tailwind</title>
+</head>
+<body>  
+    <header class="bg-indigo-800 dark:bg-black mx-auto flex justify-between items-center shadow-md fixed w-full z-10" style="height: 60px;">
+        <div class="pl-4 md:pl-20">
+            <a href="index.html" class="font-black text-white text-lg md:text-2xl hover:text-gray-300">KuliKode</a>
+        </div>
+        <ul class="w-0 md:w-96 md:mr-16 md:flex md:pr-16 tr" id="mobileMenu">
+            <li><a href="#home" class="block px-4 py-4 md:py-2 text-white hover:text-gray-300 focus:bg-indigo-500">Home</a></li>
+            <li><a href="#about" class="block px-4 py-4 md:py-2 text-white hover:text-gray-300 focus:bg-indigo-500">About</a></li>
+            <li><a href="#portofolio" class="block px-4 py-4 md:py-2 text-white hover:text-gray-300 focus:bg-indigo-500">Portofolio</a></li>
+            <li><a href="#service" class="block px-4 py-4 md:py-2 text-white hover:text-gray-300 focus:bg-indigo-500">Service</a></li>
+            <li><a href="#contact" class="block px-4 py-4 md:py-2 text-white hover:text-gray-300 focus:bg-indigo-500">Contact</a></li>
+        </ul>
+        <p id="humbergerbtn" 
+           class="md:hidden text-sm absolute top-4 right-4 px-2 py-1 font-bold bg-white border-gray-100 border-1 rounded-md cursor-pointer focus:bg-gray-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-800"  viewBox="0 0 20 20" fill="currentColor">
+            <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+          </svg>
+        </p>
+    </header>
+    <!-- ./Header -->
+
+    <!-- Container Home -->
+    <div class="w-full md:container md:mx-auto">
+        <!-- Content -->
+        <div id="home" class="container mx-auto w-full px-6 pt-20 md:pt-28 md:flex md:items-center md:px-20 pb-16">
+            <div class="w-full md:w-1/2" data-aos="fade-down">
+                <h1 class="font-black text-2xl leading-none mb-8 md:mb-0 md:text-6xl">Lorem, ipsum dolor.</h1>
+                <img src="assets/img/img-home.svg" class="md:hidden my-6 block w-72 mx-auto shadow-2xl rounded-md" alt="img-home">
+                <p class="text-justify leading-loose md:leading-relaxed text-gray-700 mt-8 mb-12 md:text-left">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Consectetur</strong> suscipit nulla rerum hic sunt quos voluptates <strong>exercitationem quam</strong> architecto similique.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" 
+                    class="btn-more">
+                    Learn more
+                </a>
+            </div>
+            <div class="md:w-1/2" data-aos="fade-down">
+                <img src="assets/img/img-home.svg" class="hidden md:block w-full mt-0 shadow-lg" alt="img-home">
+            </div>
+        </div>
+        <!-- end content -->
+    </div>
+    <!-- End Container Home -->
+    
+    <!-- About -->
+    <div id="about" class="text-center md:px-32 md:pt-28 pt-20 md:pb-44 pb-36 md:mt-16 w-full h-full">
+        <h2 class="font-black text-4xl text-center mt-8 tracking-wider" data-aos="fade-up">
+            About
+        </h2>
+        <div class="h-0.5 bg-gray-900 my-10 w-72 mx-auto mb-6" data-aos="fade-up"></div>
+        <div class="mt-12 flex justify-center px-10" data-aos="fade-up">
+            <p class="text-gray-700 text-justify leading-loose md:text-lg md:text-center">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam amet sunt ducimus est odio architecto odit iste facilis consequatur ipsa.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, hic dolorum atque velit facere assumenda voluptatibus eaque voluptas ipsam voluptate ea illum veniam? Recusandae, provident doloribus blanditiis unde cum ratione nesciunt magni rem. Consequuntur, impedit. Commodi molestias odit neque mollitia magni, quod molestiae eligendi ex, earum aliquid optio quidem. Officiis?
+            </p>
+        </div>
+    </div>
+    <!-- End About -->
+
+     <!-- Portofolio -->
+     <div id="portofolio" class="px-20 md:px-32 w-full pt-24 md:pt-20 pb-28 mt-16 h-full bg-indigo-700">
+        <h2 class="font-black text-white text-4xl text-center tracking-wider" data-aos="fade-up">
+            Portofolio
+        </h2>
+        <div class="h-0.5 bg-gray-100 my-10 md:w-72 mx-auto w-full mb-6" data-aos="fade-up"></div>
+        <!-- Fleax -->
+        <div class="md:flex md:justify-center mt-8 md:mt-16">
+            <img src="assets/img/img-percentages.svg" alt="img-about" data-aos="fade-right" class="w-48 md:mx-0 mx-auto md:w-96 shadow-2xl bg-white rounded-lg p-4 md:mr-12">
+            <div class="md:text-lg leading-relaxed mt-8 md:mt-0" data-aos="fade-left">
+                <h3 class="font-black text-gray-100 text-left tracking-wider mb-1">Nama</h3>
+                <p class="inline-block bg-gray-100 rounded-lg font-bold py-1 px-2 mb-4 text-sm md:text-lg">Yayak Yogi Ginantaka</p>
+                <h3 class="font-black text-gray-100 text-left tracking-wider">Skill</h3>
+                <ul class="list-disc ml-4 text-gray-100 mb-4">
+                    <li>Lorem</li>
+                    <li>Ipsum</li>
+                    <li>Dolor</li>
+                    <li>Sit</li>
+                </ul>
+                <h3 class="font-black text-gray-100 text-left tracking-wider mb-1">My Project</h3>
+                <a href="https://github.com/yayakyogi" target="_blank" class="inline-block text-sm bg-gray-100 rounded-lg font-bold py-1 px-2 mb-4 md:text-lg hover:text-gray-700 focus:bg-gray-300">https://github.com/yayakyogi</a>
+            </div>
+        </div>
+        <!-- ./Flex -->
+    </div>
+    <!-- End Portofolio -->
+
+    <!-- Service -->
+    <div id="service" class="px-8 md:px-28 py-20">
+        <h2 class="font-black text-4xl text-center tracking-wider mb-6" data-aos="zoom-in">
+            Service
+        </h2>
+        <div class="h-0.5 bg-gray-900 md:my-10 md:w-96 mx-auto w-48 mb-8 md:mb-12" data-aos="zoom-in"></div>
+        <div class="md:flex md:justify-center md:items-center rounded-md">
+            <div class="mb-6 md:mb-0 rounded-lg bg-gradient-to-b from-indigo-600 to-indigo-300 hover:to-indigo-400 shadow-xl px-4 md:py-4 py-6 w-full md:w-3/12 mr-4 transition duration-200 transform scale-90 hover:scale-95" data-aos="fade-right">
+                <img src="assets/img/img-webdev.svg" alt="webdev" class="mx-auto mb-8 h-48 rounded p-2">
+                <div class="h-0.5 bg-indigo-50 my-10 w-48 mx-auto mb-4"></div>
+                <div class="flex flex-col justify-center">
+                    <p class="font-bold text-center mb-4 text-lg">Lorem</p>
+                    <a href="#service" class="bg-indigo-700 px-4 py-2 rounded-md text-white text-center hover:bg-indigo-600 focus:outline-none focus:ring-2 ring-blue-200">See more</a>
+                </div>
+            </div>
+            <div class="mb-6 md:mb-0 rounded-lg bg-gradient-to-b from-indigo-600 to-indigo-300 hover:to-indigo-400 shadow-xl px-4 md:py-4 py-6 w-full md:w-3/12 mr-4 transition duration-200 transform scale-90 hover:scale-95" data-aos="fade-up">
+                <img src="assets/img/img-iot.svg" alt="webdev" class="mx-auto mb-8 h-48"">
+                <div class="h-0.5 bg-indigo-50 my-10 w-48 mx-auto mb-4"></div>
+                <div class="flex flex-col justify-center">
+                    <p class="font-bold text-center mb-4 text-lg">Ipsum</p>
+                    <a href="#service" class="bg-indigo-700 px-4 py-2 rounded-md text-white text-center hover:bg-indigo-600 focus:outline-none focus:ring-2 ring-blue-200">See more</a>
+                </div>
+            </div>
+            <div class="mb-6 md:mb-0 rounded-lg bg-gradient-to-b from-indigo-600 to-indigo-300 hover:to-indigo-400 shadow-xl px-4 md:py-4 py-6 w-full md:w-3/12 mr-4 transition duration-200 transform scale-90 hover:scale-95" data-aos="fade-left">
+                <img src="assets/img/img-portofolio.svg" alt="webdev" class="mx-auto mb-8 h-48"">
+                <div class="h-0.5 bg-indigo-50 my-10 w-48 mx-auto mb-4"></div>
+                <div class="flex flex-col justify-center">
+                    <p class="font-bold text-center mb-4 text-lg">Dolor</p>
+                    <a href="#service" class="bg-indigo-700 px-4 py-2 rounded-md text-white text-center hover:bg-indigo-600 focus:outline-none focus:ring-2 ring-blue-200">See more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Service -->
+
+    <!-- Contact -->
+    <div id="contact" class="bg-fixed h-full bg-auto" style="background-image: url('assets/img/background.jpg');">
+        <div class="bg-transparent px-28 py-72 flex justify-center items-center" style="background-color: rgba(0,0,0,0.5);">
+            <div class="w-96">
+                <p class="font-thin text-center text-gray-400" data-aos="zoom-out">Made by &hearts; kulikode - 2021</p>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    .active{
+        display: block;
+        list-style-type: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 250px;
+        height: 100vh;
+        background-color: rgba(55, 48, 163,1);
+        transition: all 0.5s;
+        opacity: 1;
+    }
+</style>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    let hamburgerbtn = document.getElementById('humbergerbtn');
+    let mobileMenu = document.getElementById('mobileMenu');
+
+    hamburgerbtn.addEventListener('click',function(){
+        mobileMenu.classList.toggle('active');
+    })
+  AOS.init();
+</script>
+</html>
