@@ -7,8 +7,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Tailwind</title>
 </head>
-<body>  
-    <header class="bg-indigo-800 dark:bg-black mx-auto flex justify-between items-center shadow-md fixed w-full z-10" style="height: 60px;">
+<body>
+<div class="wrap">  
+    <header class="bg-indigo-800 dark:bg-black mx-auto flex justify-between items-center shadow-md w-96 md:w-full fixed  z-10" style="height: 60px;">
         <div class="pl-4 md:pl-20">
             <a href="index.html" class="font-black text-white text-lg md:text-2xl hover:text-gray-300">KuliKode</a>
         </div>
@@ -137,6 +138,7 @@
             </div>
         </div>
     </div>
+</div>
 </body>
 <style>
     .active{
@@ -150,6 +152,9 @@
         background-color: rgba(55, 48, 163,1);
         transition: all 0.5s;
         opacity: 1;
+    }
+    .wrap{
+        overflow: hidden;
     }
 </style>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
